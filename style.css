@@ -1,0 +1,128 @@
+/*universal selector
+    Whitch selects all HTML elements on the page
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*we will begin with the body and add the following*/
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   /*and for now we will add a background color of seagreen*/
+   background: url(images.jpeg) no-repeat; /*remove background green*/
+   /*find a background imgage url and add it to the CSS */
+   background-size: cover;
+   background-position:center ;
+}
+
+/*in the HTML we have this class wrapper which we need to add CSS for it and add the following*/
+.wrapper {
+    width: 420px;
+    background: transparent; /*make transparent*/
+    color: white; /*fff*/
+    border-radius: 12px; /*added border-radius*/
+    padding:30px 40px ; /*added padding*/
+
+}
+/*in the wrapper we have this <h1> */
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+/*here is the styled heading*/
+
+/*now we need to style these input boxes, (check the class) */
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+/*now if we remove this yellow background we can clearly see the styled input with a border that's somehow transparent*/
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    /*The color is represented as white 20% opacity allowing underline content to show through the border to some extent*/
+    border-radius: 40px;
+    /*we should also change this input text to something more visable lets say to a white color and increase its size*/
+    /*next we will add a padding to the input text */
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+/*next stop lets make these placeholders white*/
+.input-box input::placeholder{
+   color: #fff; 
+}
+
+/*now we want to move these icons into the input boxes, (now we confirm there class)*/
+.input-box i{
+    position: absolute;
+    right: 20px;
+    /*if we now check it the icons are now outside of the input box
+    to move them to the input box go up to (.wrapper .input-box) and make the position relative
+    and now lets move it to the center*/
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+/*now we need to style the remember forgot, the CSS  will include a pace between remember me and forgot password*/
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forgot label{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 42px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align:center;
+    margin: 20px 0 15px; /*remove top, and add more values*/
+}
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight:600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}

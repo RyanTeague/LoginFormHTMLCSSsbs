@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+<body>
+   <!--Create a div with class="wrapper"
+    .wrapper    
+--> 
+<div class="wrapper">
+    <!--inside of the div create a form with an empty attribute 
+    because we are not submitting the form data-->
+    <form action="#">
+        <!--in this form we will add 1 <h1> heading and call it login-->
+        <h1>Login</h1>
+        <!--in this same form create a div with class="input-box" (.input-box)-->
+        <div class="input-box">
+            <!--Now in this div, add an input field with a type set to text  -->
+            <input type="text" placeholder="username"> <!--when the type is set to text it creates
+            a single input field where users can enter text and add a placeholder called username, 
+            this placeholder attribute provides a hint or elample text, now add required a Boolean attribute
+            that indicates that the input feild must be filled out by the user before the form can be submitted-->
+            <i class='bx bxs-user'></i>
+        </div>
+        <!--Now we make a password input field-->
+        <div class="input-box">
+            <input type="password" placeholder="password" required>
+            <i class='bx bxs-lock-alt' ></i>
+        </div>
+        <!--Now we will create another div class="remember-forgot" -->
+        <div class="remember-forgot">
+            <!--inside it, add a label-->
+            <label><!--and in the label add a input, change its type attribute to checkbox--><input type="checkbox">Remember Me</label>
+            <!--This creates a user checkbox that users can check or uncheck, the text displayed next to the checkbox will be remember me-->
+            <!--now add a hyperlink element <a> tag, and add a placeholder link #-->
+            <a href="#">Forgot Password</a> <!--usually you would replace it with the actual URL or JavaScript function that handles the password recovery process-->
+            <!--the text diplayed will be Forgot password-->
+        </div>
+        <!--Create a button with class="between or/btn" (button.btn)-->
+        <button type="submit" class="btn">Login</button> <!--add a type attribute and set it to submit, this indicats that the button is 
+                                        intened to submit a form. The text displayed on the button will be Login-->
+        <!--Create a div with class="register-link" -->
+        <div class="register-link">
+            <!--inside of it, add a paragraph element, and in the <p> element add (Don't have an account)-->
+            <p>Don't have an account ? <a href="#">Register</a> </p> <!-- and add a hyperlink with (#) as the placeholder, and set the text of the link to register-->
+        </div>
+    </form>
+    <!--Now lets add icons to the input fields (boxicon.com) and under usage scroll down to usage as a font
+    
+        copy the link, and in the HTML file right below the CSS link paste the copy code.
+
+        Now go back to the website and the home page and inside here we will search for the icon that we want
+        
+        First icon is (Usere) click on font and copy it, in the HTML in the first input box paste it above the closing div element
+        second icon is (Lock) and do the same
+    -->
+
+    <!--Now lets Style the Whole form with CSS in the external CSS file-->
+</div>
+</body>
+</html>
